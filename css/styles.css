@@ -29,6 +29,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
 margin: 0;
 }
@@ -39,22 +42,26 @@ button{
     border-width: 0;
 }
 
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+address {
+    font-style: normal;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container{
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
- 
-
-    /* outline: 1px solid red; */
+    padding: 0 15px;
+    margin: 0 auto;
+       /* outline: 1px solid red; */
     
 }
 
@@ -70,14 +77,15 @@ img {
 }
 
 /* Секція Хедер */
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header-container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
-
+    
     /* background-color: yellowgreen; */
-
 } 
 
 .logo-header{
@@ -172,8 +180,7 @@ img {
 /* Секція Hero */
 
 .hero {
-    display: block;
-    height: 600px;
+    /* height: 600px; */
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -182,10 +189,8 @@ img {
 
 
 .hero-title {
-    display: block;
    
     width: 696px;
-    height: 120px;
     margin-left: auto;
     margin-right: auto;
 
@@ -237,10 +242,10 @@ img {
     overflow: hidden;
   }
 
-  .features-container{
+  /* .features-container{
     padding-top: 94px;
     padding-bottom: 94px;
-  }
+  } */
 
   .features-list{
     display: flex;
@@ -272,7 +277,7 @@ img {
 
 /* Секція чим ми займаємося */
 .about{
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 .about-title {
     margin-bottom: 50px;
@@ -312,8 +317,12 @@ img {
 
 .team-list{
     display: flex;
-    justify-content: center;
-}
+   }
+
+   .team-card{
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
 
 .team-member {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -326,7 +335,6 @@ img {
 }
 
 .team-member-title {
-    margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
 
@@ -338,7 +346,6 @@ img {
 }
 
 .team-member-position {
-    margin-bottom: 30px;
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
@@ -374,10 +381,6 @@ img {
 }
 
 /* Секція Контакти */
-address {
- 
-    font-style: normal;
-}
 
 .address-footer{
     color: var(--secondary-text-color);
@@ -414,9 +417,8 @@ address {
 .filters {
     display: flex;
     justify-content: center;
-    height: 54px;
-    /* margin-right: auto; */
-    margin-bottom: 34px;
+     /* margin-right: auto; */
+    margin-bottom: 50px;
     /* margin-left: auto; */
 }
 
@@ -472,12 +474,17 @@ address {
     margin-bottom: 0;
     /* background-color: orange; */
   }
-.portfolio-item-title {
+
+  .portfolio-card{
     margin-top: 20px;
     margin-right: 24px;
-    margin-bottom: 4px;
-    margin-left: 24px;margin-left: 24px;
+    margin-bottom: 20px;
+    margin-left: 24px;
     
+
+  }
+.portfolio-item-title {
+    margin-bottom: 4px;    
 
     font-weight: 700;
     font-size: 18px;
@@ -488,10 +495,6 @@ address {
 }
 
 .portfolio-item-descr {
-    margin-right: 24px;
-    margin-bottom: 20px;
-    margin-left: 24px;
-
     font-size: 16px;
     line-height: 1.88;
     
